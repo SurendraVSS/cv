@@ -1,0 +1,520 @@
+﻿i.feature-pointer,
+i.feature-pointer .dot {
+  width: 25px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+i.feature-pointer.active:before,
+i.feature-pointer:before {
+  content: "";
+  z-index: 1;
+  animation: 2s linear infinite ripple;
+}
+.product-nav a,
+.product-nav li,
+i.feature-pointer {
+  display: inline-block;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #bce6fe;
+}
+body,
+html {
+  height: 100%;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+:focus {
+  outline: 0;
+}
+.hs-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px;
+  padding: 15px;
+}
+.hide,
+.hs-truck-item {
+  display: none;
+}
+.hs-truck-feature.active,
+.hs-truck-item.active,
+.show {
+  display: block;
+}
+.hs-truck-item-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+}
+.hs-truck-feature-wrapper {
+  width: 30%;
+  min-height: 450px;
+  display: flex;
+  align-items: flex-end;
+}
+.hs-truck-feature {
+  background-color: #0a0664;
+  padding: 15px 20px;
+  border-radius: 3px;
+  max-width: 265px;
+  display: none;
+  -webkit-box-shadow: 3px 2px 18px -4px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 3px 2px 18px -4px rgba(0, 0, 0, 0.46);
+  box-shadow: 3px 2px 18px -4px rgba(0, 0, 0, 0.46);
+  min-height: 450px;
+}
+.hs-truck-feature-title-wrapper {
+  min-height: 175px;
+}
+.hs-truck-image-wrapper {
+  width: 70%;
+  position: relative;
+  text-align: center;
+}
+.hs-truck-feature-title {
+  font-family: UniNeue-heavy;
+  font-size: 32px;
+  color: #fff;
+  margin: 0 0 10px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.hs-truck-feature-desc {
+  font-family: UniNeue-bold;
+  font-size: 21px;
+  color: #fff;
+  margin: 0 0 15px;
+  line-height: 1;
+}
+.hs-truck-feature-img {
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  max-width: 240px !important;
+  width: 100%;
+}
+.hs-truck-img {
+  height: auto;
+  width: 100%;
+}
+.hs-pointers {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+i.feature-pointer {
+  height: 25px;
+  background-color: #69d96f;
+  border-radius: 50%;
+  position: absolute;
+}
+i.feature-pointer .dot {
+  color: #000;
+  font-family: UniNeue-regular;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 25px;
+  text-align: center;
+  display: block;
+}
+i.feature-pointer.active {
+  transform: scale(1.2);
+  background-color: #3e85df;
+}
+i.feature-pointer.active .dot {
+  color: #fff;
+}
+i.feature-pointer.active:before {
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+  left: -6px;
+  top: -6px;
+  border: 4px solid #3e85df;
+}
+i.feature-pointer.active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  transform: scale(1.4);
+  top: 0;
+  border: 2px solid #3e85df;
+}
+i.feature-pointer:before {
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  left: -3px;
+  top: -3px;
+  border: 4px solid #69d96f;
+}
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.1);
+    opacity: 0.75;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  75% {
+    transform: scale(1.3);
+    opacity: 0.25;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+.ultra-1918-t-1 .pointer-engine {
+  right: 12%;
+  bottom: 42%;
+}
+.ultra-1918-t-1 .pointer-egr {
+  left: 32%;
+  bottom: 30%;
+}
+.ultra-1918-t-1 .pointer-cabin {
+  right: 24%;
+  top: 18%;
+}
+.ultra-1918-t-1 .pointer-clutch {
+  right: 22%;
+  bottom: 45%;
+}
+.ultra-1918-t-1 .pointer-fuel-tank {
+  left: 28%;
+  bottom: 40%;
+}
+.ultra-1918-t-1 .pointer-tyre {
+  right: 47%;
+  bottom: 13%;
+}
+.ultra-1918-t-2 .pointer-engine {
+  left: 19%;
+  bottom: 40%;
+}
+.ultra-1918-t-2 .pointer-egr,
+.ultra-3021-s-1 .pointer-egr,
+.ultra-3021-s-2 .pointer-egr {
+  left: 36%;
+  bottom: 19%;
+}
+.ultra-1918-t-2 .pointer-cabin {
+  left: 33%;
+  top: 20%;
+}
+.ultra-1918-t-2 .pointer-clutch {
+  left: 15%;
+  bottom: 43%;
+}
+.ultra-1918-t-2 .pointer-fuel-tank,
+.ultra-3021-s-2 .pointer-fuel-tank {
+  left: 27%;
+  bottom: 30%;
+}
+.ultra-1918-t-2 .pointer-tyre {
+  right: 46%;
+  bottom: 30%;
+}
+.ultra-3021-s-1 .pointer-engine {
+  right: 16%;
+  bottom: 41%;
+}
+.ultra-3021-s-1 .pointer-cabin {
+  right: 22%;
+  top: 21%;
+}
+.ultra-3021-s-1 .pointer-clutch {
+  right: 26%;
+  bottom: 45%;
+}
+.ultra-3021-s-1 .pointer-fuel-tank {
+  left: 30%;
+  bottom: 35%;
+}
+.ultra-3021-s-1 .pointer-tyre {
+  right: 49%;
+  bottom: 12%;
+}
+.ultra-3021-s-2 .pointer-engine {
+  left: 17%;
+  bottom: 42%;
+}
+.ultra-3021-s-2 .pointer-cabin {
+  left: 20%;
+  top: 22%;
+}
+.ultra-3021-s-2 .pointer-clutch {
+  left: 13%;
+  bottom: 45%;
+}
+.ultra-3021-s-2 .pointer-tyre {
+  right: 43%;
+  bottom: 12%;
+}
+.intra-v30-1 .pointer-dashboard {
+  left: 15%;
+  bottom: 71%;
+}
+.intra-v30-1 .pointer-new-gen-cluster {
+  left: 15%;
+  bottom: 65%;
+}
+.intra-v30-1 .pointer-seats {
+  left: 26%;
+  bottom: 75%;
+}
+.intra-v30-1 .pointer-headlamps {
+  left: 3%;
+  bottom: 50%;
+}
+.intra-v30-1 .pointer-tyres {
+  left: 23%;
+  bottom: 28%;
+}
+.intra-v30-2 .pointer-dashboard {
+  left: 23%;
+  bottom: 64%;
+}
+.intra-v30-2 .pointer-new-gen-cluster {
+  left: 18%;
+  bottom: 65%;
+}
+.intra-v30-2 .pointer-seats {
+  left: 35%;
+  bottom: 70%;
+}
+.intra-v30-2 .pointer-headlamps {
+  left: 37%;
+  bottom: 51%;
+}
+.intra-v30-2 .pointer-tyres {
+  left: 56%;
+  bottom: 24%;
+}
+.intra-v30-3 .pointer-dashboard {
+  left: 45%;
+  bottom: 67%;
+}
+.intra-v30-3 .pointer-new-gen-cluster {
+  left: 37%;
+  bottom: 66%;
+}
+.intra-v30-3 .pointer-seats {
+  left: 58%;
+  bottom: 73%;
+}
+.intra-v30-3 .pointer-headlamps {
+  left: 69%;
+  bottom: 48%;
+}
+.intra-v30-3 .pointer-tyres {
+  left: 28%;
+  bottom: 12%;
+}
+.intra-v30-4 .pointer-dashboard {
+  left: 74%;
+  bottom: 66%;
+}
+.intra-v30-4 .pointer-new-gen-cluster {
+  left: 66%;
+  bottom: 65%;
+}
+.intra-v30-4 .pointer-seats {
+  left: 47%;
+  bottom: 75%;
+}
+.intra-v30-4 .pointer-headlamps {
+  left: 65%;
+  bottom: 48%;
+}
+.intra-v30-4 .pointer-tyres {
+  left: 46%;
+  bottom: 20%;
+}
+.intra-v30-5 .pointer-dashboard {
+  left: 86%;
+  bottom: 67%;
+}
+.intra-v30-5 .pointer-new-gen-cluster {
+  left: 85%;
+  bottom: 73%;
+}
+.intra-v30-5 .pointer-seats {
+  left: 72%;
+  bottom: 79%;
+}
+.intra-v30-5 .pointer-headlamps {
+  left: 94%;
+  bottom: 58%;
+}
+.intra-v30-5 .pointer-tyres {
+  left: 72%;
+  bottom: 27%;
+}
+.hs-truck-thumbnail-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
+}
+.hs-truck-thumbnail {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid #0a0664;
+  margin-left: 40px;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+.hs-truck-thumbnail img {
+  width: 78px;
+}
+.hs-truck-thumbnail.active {
+  background-color: #3e85df;
+  border: 1px solid transparent;
+}
+.mw-500 {
+  max-width: 500px;
+}
+@media (max-width: 991px) {
+  .hs-truck-item-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hs-truck-feature-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    min-height: auto;
+  }
+  .hs-truck-feature {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    min-height: auto;
+  }
+  .hs-truck-feature-title {
+    font-size: 28px;
+    margin-bottom: 5px;
+    padding: 0 5px;
+  }
+  .hs-truck-feature-desc {
+    margin-bottom: 0;
+    padding: 0 5px;
+    font-size: 18px;
+  }
+  .hs-truck-feature-content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .feature-slider {
+    width: 40%;
+    float: left;
+  }
+  .hs-truck-feature-title-wrapper {
+    width: 60%;
+    float: right;
+    padding-left: 15px;
+    min-height: auto;
+  }
+  .hs-truck-feature-img {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    max-width: 240px !important;
+    width: 100%;
+  }
+  .hs-truck-image-wrapper {
+    width: 100%;
+  }
+  .hs-truck-bg {
+    padding-top: 0;
+  }
+  .glider-prev {
+    left: 0;
+  }
+  .glider-next {
+    right: 0;
+  }
+}
+@media (max-width: 480px) {
+  .hs-truck-bg {
+    background-image: url(../images/hs-truck-bg-mob.jpg);
+    background-position: center bottom;
+    padding-top: 50px;
+  }
+}
+.product-nav {
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding-right: 10px;
+}
+.product-nav ul {
+  list-style: none;
+}
+.product-nav a {
+  font-family: "UniNeue-bold";
+  background: #6f6f6f;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.product-nav a:hover {
+  border: 1px solid #333;
+  background: #333;
+}
+.product-nav a.active {
+  background: #0a0664;
+}
+.product-nav select {
+  width: 100%;
+  padding: 0.4rem 0.5rem;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  max-width: 400px;
+  display: none;
+}
+@media (max-width: 960px) {
+  .product-nav ul {
+    display: none;
+  }
+  .product-nav select {
+    display: inline-block;
+  }
+}
+.hs-truck-bg {
+  padding-top: 50px;
+}
